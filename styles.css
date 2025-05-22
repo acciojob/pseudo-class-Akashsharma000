@@ -1,1 +1,21 @@
 /*  your css code here. If applicable */
+.container{
+	margin:20px;
+	position: relative;
+}
+
+#container::before {
+    content: "Before Content"; /* Text to insert before */
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size */
+    display: block; /* Make it a block element */
+    margin-bottom: 10px; /* Space between before content and main content */
+}
+#container::after {
+    content: "After Content"; /* Text to insert after */
+    color: #f00; /* Red color */
+    font-size: 20px; /* Font size */
+    display: block; /* Make it a block element */
+    margin-top: 10px; /* Space between main content and after content */
+}
+
